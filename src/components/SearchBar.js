@@ -23,11 +23,10 @@ class SearchBar extends Component {
 		const currTerm = this.state.term;
 
 		return (
-			<div>
+			<div className="search-bar">
 			<label>Search:&nbsp;
 			<input type="text" value={currTerm} onChange={this.handleInputChange}/>
 			</label>
-			<p>Value of input: {currTerm}</p>
 			</div>
 		);
 	}
